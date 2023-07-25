@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vmp-EH-bgj">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Courses-->
+        <scene sceneID="F2T-xl-K4i">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="0HZ-LG-Wcp" customClass="CourseListViewController" customModule="SwiftbookAppVIPER" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wh2-eR-BOA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dvt-11-G1p">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseCell" id="SYY-yV-QIq" customClass="CourseCell" customModule="SwiftbookAppVIPER">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SYY-yV-QIq" id="nXm-iG-XCg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-xe-VSQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0HZ-LG-Wcp" id="whB-Jb-4TN"/>
+                                    <outlet property="delegate" destination="0HZ-LG-Wcp" id="qYF-jh-Idp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bBr-cs-2wo"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dvt-11-G1p" firstAttribute="bottom" secondItem="bBr-cs-2wo" secondAttribute="bottom" id="cem-EE-aly"/>
+                            <constraint firstItem="Dvt-11-G1p" firstAttribute="leading" secondItem="bBr-cs-2wo" secondAttribute="leading" id="gl6-WZ-htj"/>
+                            <constraint firstItem="Dvt-11-G1p" firstAttribute="top" secondItem="bBr-cs-2wo" secondAttribute="top" id="qAD-x7-Sq1"/>
+                            <constraint firstItem="Dvt-11-G1p" firstAttribute="trailing" secondItem="bBr-cs-2wo" secondAttribute="trailing" id="zKd-uk-vAv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Courses" id="HWf-l3-V7k"/>
+                    <connections>
+                        <outlet property="tableView" destination="Dvt-11-G1p" id="KZy-IP-ki3"/>
+                        <segue destination="SAQ-XO-B6n" kind="show" identifier="showDetails" id="cU4-gm-gba"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xg2-dd-v0i" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="772" y="-672.41379310344837"/>
+        </scene>
+        <!--Course Details View Controller-->
+        <scene sceneID="L9D-VI-WG6">
+            <objects>
+                <viewController id="SAQ-XO-B6n" customClass="CourseDetailsViewController" customModule="SwiftbookAppVIPER" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Cl-AF-Zlz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-courselogo" translatesAutoresizingMaskIntoConstraints="NO" id="W3a-EY-TL0">
+                                <rect key="frame" x="34" y="239" width="251" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="nDz-ZC-oHZ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-F4-i6o">
+                                <rect key="frame" x="34" y="490" width="251" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of lessons: 45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKP-5x-gzm">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of tests: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-gd-8gQ">
+                                        <rect key="frame" x="0.0" y="40.5" width="139.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фреймворк для создания игр SpriteKit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-Yj-zfF">
+                                <rect key="frame" x="20" y="131.5" width="280" height="80.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0F-yw-DnB">
+                                <rect key="frame" x="225" y="382" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PsZ-Xz-tG1"/>
+                                    <constraint firstAttribute="width" constant="60" id="nRw-qD-T81"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.1851396723" blue="0.1986965527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="heart.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleFavorite" destination="SAQ-XO-B6n" eventType="touchUpInside" id="aWL-ZZ-sNX"/>
+                                    <action selector="toggleFavorite:" destination="SAQ-XO-B6n" eventType="touchUpInside" id="zew-dm-2h4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="348-ta-KVv"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y0F-yw-DnB" firstAttribute="trailing" secondItem="W3a-EY-TL0" secondAttribute="trailing" id="1cJ-m2-lVt"/>
+                            <constraint firstItem="rrX-Yj-zfF" firstAttribute="top" secondItem="348-ta-KVv" secondAttribute="top" constant="39" id="B79-Nb-Jxq"/>
+                            <constraint firstItem="y0F-yw-DnB" firstAttribute="trailing" secondItem="W3a-EY-TL0" secondAttribute="trailing" id="G6Y-Yi-kwS"/>
+                            <constraint firstItem="2Oy-F4-i6o" firstAttribute="trailing" secondItem="W3a-EY-TL0" secondAttribute="trailing" id="NKk-kr-L1X"/>
+                            <constraint firstAttribute="trailing" secondItem="rrX-Yj-zfF" secondAttribute="trailing" constant="20" id="OS4-Q4-A17"/>
+                            <constraint firstItem="rrX-Yj-zfF" firstAttribute="leading" secondItem="348-ta-KVv" secondAttribute="leading" constant="20" id="U6Y-tD-GMQ"/>
+                            <constraint firstItem="W3a-EY-TL0" firstAttribute="top" secondItem="rrX-Yj-zfF" secondAttribute="bottom" constant="27" id="g8f-ib-9Bk"/>
+                            <constraint firstItem="W3a-EY-TL0" firstAttribute="leading" secondItem="348-ta-KVv" secondAttribute="leading" constant="34" id="h74-OU-M7X"/>
+                            <constraint firstItem="2Oy-F4-i6o" firstAttribute="top" secondItem="W3a-EY-TL0" secondAttribute="bottom" constant="48" id="qcO-UZ-sWg"/>
+                            <constraint firstItem="348-ta-KVv" firstAttribute="trailing" secondItem="W3a-EY-TL0" secondAttribute="trailing" constant="35" id="tbL-5Z-lZs"/>
+                            <constraint firstItem="y0F-yw-DnB" firstAttribute="bottom" secondItem="W3a-EY-TL0" secondAttribute="bottom" id="weV-6z-72r"/>
+                            <constraint firstItem="2Oy-F4-i6o" firstAttribute="leading" secondItem="W3a-EY-TL0" secondAttribute="leading" id="z23-nT-5uS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLN-Ua-f4u"/>
+                    <connections>
+                        <outlet property="courseImage" destination="W3a-EY-TL0" id="Vdd-lu-vty"/>
+                        <outlet property="courseNameLabel" destination="rrX-Yj-zfF" id="RkV-v4-LJV"/>
+                        <outlet property="favoriteButton" destination="y0F-yw-DnB" id="HP0-J3-uE0"/>
+                        <outlet property="numberOfLessonsLabel" destination="vKP-5x-gzm" id="ZEi-uu-fRB"/>
+                        <outlet property="numberOfTestsLabel" destination="Noz-gd-8gQ" id="wbF-cz-SDY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bg-Lw-j6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496.8" y="-672.41379310344837"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iy0-5L-c4E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vmp-EH-bgj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BB5-wy-hOf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0HZ-LG-Wcp" kind="relationship" relationship="rootViewController" id="4PV-tk-zJu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbR-lg-6f4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-671.51424287856082"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2-courselogo" width="600" height="432"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+    </resources>
 </document>

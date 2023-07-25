@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		352CC76B2A6F948D00157D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC76A2A6F948D00157D6C /* AppDelegate.swift */; };
 		352CC76D2A6F948D00157D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC76C2A6F948D00157D6C /* SceneDelegate.swift */; };
-		352CC76F2A6F948D00157D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC76E2A6F948D00157D6C /* ViewController.swift */; };
 		352CC7722A6F948D00157D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352CC7702A6F948D00157D6C /* Main.storyboard */; };
 		352CC7742A6F949000157D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352CC7732A6F949000157D6C /* Assets.xcassets */; };
 		352CC7772A6F949000157D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352CC7752A6F949000157D6C /* LaunchScreen.storyboard */; };
+		352CC7852A6F95F400157D6C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7842A6F95F400157D6C /* Course.swift */; };
+		352CC7872A6F970800157D6C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7862A6F970800157D6C /* NetworkManager.swift */; };
+		352CC78A2A6F98AA00157D6C /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7892A6F98AA00157D6C /* ImageManager.swift */; };
+		352CC78C2A6F998D00157D6C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC78B2A6F998D00157D6C /* DataManager.swift */; };
+		352CC78E2A6F9A6C00157D6C /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC78D2A6F9A6C00157D6C /* CourseDetailsViewController.swift */; };
+		352CC7912A6F9E8A00157D6C /* CourseDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7902A6F9E8A00157D6C /* CourseDetailsPresenter.swift */; };
+		352CC7932A6F9EA200157D6C /* CourseDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7922A6F9EA200157D6C /* CourseDetailsInteractor.swift */; };
+		352CC7952A6FA50400157D6C /* CourseDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7942A6FA50400157D6C /* CourseDetailConfigurator.swift */; };
+		352CC7972A6FBC4500157D6C /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7962A6FBC4500157D6C /* CourseListViewController.swift */; };
+		352CC79B2A6FBC8C00157D6C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC79A2A6FBC8C00157D6C /* CourseCell.swift */; };
+		352CC79E2A6FBD0E00157D6C /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC79D2A6FBD0E00157D6C /* CourseCellViewModel.swift */; };
+		352CC7A02A6FC30B00157D6C /* CourseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC79F2A6FC30B00157D6C /* CourseListPresenter.swift */; };
+		352CC7A22A6FC31C00157D6C /* CourseListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7A12A6FC31C00157D6C /* CourseListInteractor.swift */; };
+		352CC7A42A6FC54600157D6C /* CourseListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7A32A6FC54600157D6C /* CourseListRouter.swift */; };
+		352CC7A62A6FC55300157D6C /* CourseListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CC7A52A6FC55300157D6C /* CourseListConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		352CC7672A6F948D00157D6C /* SwiftbookAppVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftbookAppVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352CC76A2A6F948D00157D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		352CC76C2A6F948D00157D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		352CC76E2A6F948D00157D6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		352CC7712A6F948D00157D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		352CC7732A6F949000157D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352CC7762A6F949000157D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352CC7782A6F949000157D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352CC7842A6F95F400157D6C /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		352CC7862A6F970800157D6C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		352CC7892A6F98AA00157D6C /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		352CC78B2A6F998D00157D6C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		352CC78D2A6F9A6C00157D6C /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		352CC7902A6F9E8A00157D6C /* CourseDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsPresenter.swift; sourceTree = "<group>"; };
+		352CC7922A6F9EA200157D6C /* CourseDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsInteractor.swift; sourceTree = "<group>"; };
+		352CC7942A6FA50400157D6C /* CourseDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailConfigurator.swift; sourceTree = "<group>"; };
+		352CC7962A6FBC4500157D6C /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
+		352CC79A2A6FBC8C00157D6C /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		352CC79D2A6FBD0E00157D6C /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
+		352CC79F2A6FC30B00157D6C /* CourseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListPresenter.swift; sourceTree = "<group>"; };
+		352CC7A12A6FC31C00157D6C /* CourseListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListInteractor.swift; sourceTree = "<group>"; };
+		352CC7A32A6FC54600157D6C /* CourseListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListRouter.swift; sourceTree = "<group>"; };
+		352CC7A52A6FC55300157D6C /* CourseListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,93 @@
 		352CC7692A6F948D00157D6C /* SwiftbookAppVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				352CC76A2A6F948D00157D6C /* AppDelegate.swift */,
-				352CC76C2A6F948D00157D6C /* SceneDelegate.swift */,
-				352CC76E2A6F948D00157D6C /* ViewController.swift */,
-				352CC7702A6F948D00157D6C /* Main.storyboard */,
-				352CC7732A6F949000157D6C /* Assets.xcassets */,
-				352CC7752A6F949000157D6C /* LaunchScreen.storyboard */,
-				352CC7782A6F949000157D6C /* Info.plist */,
+				352CC77E2A6F94BC00157D6C /* App */,
+				352CC77F2A6F94C700157D6C /* Storyboard */,
+				352CC7802A6F94D100157D6C /* Resources */,
+				352CC7832A6F957D00157D6C /* Models */,
+				352CC7882A6F970F00157D6C /* Services */,
+				352CC78F2A6F9A7700157D6C /* CourseDetails */,
+				352CC7982A6FBC4B00157D6C /* CourseList */,
 			);
 			path = SwiftbookAppVIPER;
+			sourceTree = "<group>";
+		};
+		352CC77E2A6F94BC00157D6C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				352CC76A2A6F948D00157D6C /* AppDelegate.swift */,
+				352CC76C2A6F948D00157D6C /* SceneDelegate.swift */,
+				352CC7782A6F949000157D6C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		352CC77F2A6F94C700157D6C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				352CC7702A6F948D00157D6C /* Main.storyboard */,
+				352CC7752A6F949000157D6C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		352CC7802A6F94D100157D6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				352CC7732A6F949000157D6C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		352CC7832A6F957D00157D6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				352CC7842A6F95F400157D6C /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		352CC7882A6F970F00157D6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				352CC7862A6F970800157D6C /* NetworkManager.swift */,
+				352CC7892A6F98AA00157D6C /* ImageManager.swift */,
+				352CC78B2A6F998D00157D6C /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		352CC78F2A6F9A7700157D6C /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				352CC78D2A6F9A6C00157D6C /* CourseDetailsViewController.swift */,
+				352CC7902A6F9E8A00157D6C /* CourseDetailsPresenter.swift */,
+				352CC7922A6F9EA200157D6C /* CourseDetailsInteractor.swift */,
+				352CC7942A6FA50400157D6C /* CourseDetailConfigurator.swift */,
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		352CC7982A6FBC4B00157D6C /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				352CC7962A6FBC4500157D6C /* CourseListViewController.swift */,
+				352CC79F2A6FC30B00157D6C /* CourseListPresenter.swift */,
+				352CC7A12A6FC31C00157D6C /* CourseListInteractor.swift */,
+				352CC7A32A6FC54600157D6C /* CourseListRouter.swift */,
+				352CC7A52A6FC55300157D6C /* CourseListConfigurator.swift */,
+				352CC79C2A6FBC9400157D6C /* CourseCell */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		352CC79C2A6FBC9400157D6C /* CourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				352CC79A2A6FBC8C00157D6C /* CourseCell.swift */,
+				352CC79D2A6FBD0E00157D6C /* CourseCellViewModel.swift */,
+			);
+			path = CourseCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +244,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352CC76F2A6F948D00157D6C /* ViewController.swift in Sources */,
+				352CC79B2A6FBC8C00157D6C /* CourseCell.swift in Sources */,
+				352CC7A22A6FC31C00157D6C /* CourseListInteractor.swift in Sources */,
+				352CC7852A6F95F400157D6C /* Course.swift in Sources */,
+				352CC7872A6F970800157D6C /* NetworkManager.swift in Sources */,
+				352CC7972A6FBC4500157D6C /* CourseListViewController.swift in Sources */,
+				352CC79E2A6FBD0E00157D6C /* CourseCellViewModel.swift in Sources */,
+				352CC7952A6FA50400157D6C /* CourseDetailConfigurator.swift in Sources */,
+				352CC78C2A6F998D00157D6C /* DataManager.swift in Sources */,
+				352CC78A2A6F98AA00157D6C /* ImageManager.swift in Sources */,
 				352CC76B2A6F948D00157D6C /* AppDelegate.swift in Sources */,
+				352CC7A62A6FC55300157D6C /* CourseListConfigurator.swift in Sources */,
+				352CC7A02A6FC30B00157D6C /* CourseListPresenter.swift in Sources */,
+				352CC78E2A6F9A6C00157D6C /* CourseDetailsViewController.swift in Sources */,
+				352CC7912A6F9E8A00157D6C /* CourseDetailsPresenter.swift in Sources */,
+				352CC7932A6F9EA200157D6C /* CourseDetailsInteractor.swift in Sources */,
 				352CC76D2A6F948D00157D6C /* SceneDelegate.swift in Sources */,
+				352CC7A42A6FC54600157D6C /* CourseListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftbookAppVIPER/Info.plist;
+				INFOPLIST_FILE = SwiftbookAppVIPER/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +422,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.SwiftbookAppVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +440,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftbookAppVIPER/Info.plist;
+				INFOPLIST_FILE = SwiftbookAppVIPER/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +453,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.SwiftbookAppVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

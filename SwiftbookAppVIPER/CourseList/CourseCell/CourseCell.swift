@@ -7,17 +7,26 @@
 
 import UIKit
 
-class CourseCell: UITableViewCell {
+protocol CellModelRepresentable {
+    var viewModel: CourseCellViewModelProtocol? { get }
+}
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+class CourseCell: UITableViewCell, CellModelRepresentable {
+    var viewModel: CourseCellViewModelProtocol? {
+        didSet {
+            updateView()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func updateView() {
+        guard let viewModel = viewModel as? CourseCellViewModel else { return }
+        var content = defaultContentConfiguration()
+        content.text = viewModel.courseName
+        if let imageData = viewModel.courseImage {
+            content.image = UIImage(data: imageData)
+        }
+        contentConfiguration = content
     }
+   
 
 }
